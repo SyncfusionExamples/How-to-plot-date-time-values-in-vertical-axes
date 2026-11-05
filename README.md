@@ -1,8 +1,48 @@
-# How-to-plot-date-time-values-in-vertical-axes
+# How to plot date time values in vertical axes
 
-This article explains how to plot date time values in vertical axis of Blazor chart.
+This article explains how to plot date time values in vertical axis of [Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts) component.
 
-**Plotting date time values in vertical axis**
+## Features
+
+* Display DateTime values along the chart's vertical (Y) axis.
+* Visualize time-based data using a DateTime axis configuration.
+* Customize date and time display formats for Y-axis labels.
+* Configure axis intervals to control the granularity of DateTime values.
+* Support chronological data representation for analytical scenarios.
+* Improve readability of time-series visualizations with formatted axis labels.
+* Customize axis appearance and behavior through built-in chart properties.
+* Handle date and time data efficiently in Blazor Charts.
+* Demonstrate advanced axis configuration techniques for specialized charting requirements.
+
+## Prerequisites
+
+- Visual Studio 2026 or Visual Studio Code
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+
+## How to run the project
+
+**Visual Studio 2026**:
+
+* Checkout this project to a location in your disk.
+* Open the project (`DateTimeYAxis.csproj`) file.
+* Restore the NuGet packages.
+* Run the project.
+
+**Visual Studio Code**:
+
+* Open the repository folder in Visual Studio Code.
+* Open the integrated terminal.
+* Navigate to the repository root.
+
+```bash
+cd How-to-plot-date-time-values-in-vertical-axes
+dotnet restore
+dotnet run
+```
+
+Open the URL displayed in the terminal after the application starts.
+
+**Plotting date time values in vertical axis**:
 
 To plot date-time value in y-axis, convert the date-time values to double while populating the items source for [Blazor chart](https://www.syncfusion.com/blazor-components/blazor-charts) and reverse the conversion(double to date-time) in the [OnAxisLabelRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.AxisLabelRenderEventArgs.html) event.
 
